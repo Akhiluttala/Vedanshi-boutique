@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VEDANSHI DESIGNS | The Attractive Designs every occassion needed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<meta name="theme-color" content="#3B1450">
 <meta name="description" content="Vedanshi Designs Boutique by Manjula — designer blouse stitching, Maggam work, custom dress stitching and alterations in Secunderabad, Hyderabad.">
+<meta name="keywords" content="designer blouse, Maggam work, dress stitching, alterations, boutique, Hyderabad">
+<title>Vedanshi Designs | Elegant Designer Outfits & Stitching Services</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -13,7 +15,7 @@
 <body>
 
 <!-- ===== SCALLOP SVG SPRITE (used as border trim throughout) ===== -->
-<svg width="0" height="0" style="position:absolute">
+<svg width="0" height="0" style="position:absolute;visibility:hidden;">
   <defs>
     <symbol id="scallop" viewBox="0 0 120 14" preserveAspectRatio="none">
       <path d="M0,0 C5,14 15,14 20,0 C25,14 35,14 40,0 C45,14 55,14 60,0 C65,14 75,14 80,0 C85,14 95,14 100,0 C105,14 115,14 120,0 Z"/>
@@ -28,13 +30,13 @@
 <header class="site-header" id="siteHeader">
   <div class="nav-wrap">
     <a href="#hero" class="brand">
-      <img src="css/images/logov-2.jpeg" alt="Vedanshi Designs logo" class="logo">
+      <img src="css/images/logov-2.jpeg" alt="Vedanshi Designs logo" class="logo" width="50" height="50">
       <div class="brand-text">
         <span class="brand-name">VEDANSHI DESIGNS</span>
         <em>- Manjula</em>
       </div>
     </a>
-    <nav class="main-nav" id="mainNav">
+    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
       <a href="#hero">Home</a>
       <a href="#about">About Us</a>
       <a href="#why-us">Why Us</a>
@@ -43,8 +45,10 @@
       <a href="#visit">Visit Us</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
     </button>
   </div>
 </header>
@@ -52,49 +56,44 @@
 <main>
 
   <!-- ===== HERO ===== -->
-  <section class="hero" id="hero">
-    <!-- IMAGE: hero banner -->
-    <div class="hero-bg" style="background-image:url('css/images/bgimg.png')"></div>
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero-bg" style="background-image:url('css/images/bgimg.png')" role="img" aria-label="Elegant background banner"></div>
     <div class="hero-scrim"></div>
-    <!--<svg class="hero-paisley hero-paisley-a" viewBox="0 0 100 100" aria-hidden="true"><use href="#paisley"/></svg>
-    <svg class="hero-paisley hero-paisley-b" viewBox="0 0 100 100" aria-hidden="true"><use href="#paisley"/></svg>-->
     <div class="hero-content reveal">
       <p class="eyebrow">Making your vision into reality</p>
-      <h1>VEDANSHI DESIGNS</h1>
+      <h1 id="hero-title">VEDANSHI DESIGNS</h1>
       <p class="hero-sub">Whether you're preparing for a wedding, a festive celebration, or a special occasion, our goal is to create elegant, comfortable, and beautifully crafted outfits that make you feel confident and unforgettable.</p>
     </div>
-    <svg class="hero-scallop" preserveAspectRatio="none" viewBox="0 0 1200 40"><use href="#scallop" transform="scale(10,2.85)"/></svg>
+    <svg class="hero-scallop" preserveAspectRatio="none" viewBox="0 0 1200 40" aria-hidden="true"><use href="#scallop" transform="scale(10,2.85)"/></svg>
   </section>
 
   <!-- ===== ABOUT ===== -->
-  <section class="about" id="about">
+  <section class="about" id="about" aria-labelledby="about-title">
     <div class="section-inner about-grid">
       <div class="about-image reveal">
-        <!-- IMAGE: about photo -->
-        <img src="css/images/about-img.png" alt="Manjula, founder of Vedanshi Designs" loading="lazy">
+        <img src="css/images/about-img.png" alt="Manjula, founder of Vedanshi Designs" loading="lazy" width="560" height="560">
         <span class="about-image-trim" aria-hidden="true"></span>
       </div>
       <div class="about-copy reveal">
         <p class="eyebrow">Our Story</p>
-        <h2>Crafted with heart, stitched with precision</h2>
+        <h2 id="about-title">Crafted with heart, stitched with precision</h2>
         <p>At Vedanshi Designs Boutique, our aim is not just to stitch clothes but to create outfits that make you feel happy, confident, and special every time you wear them. We combine traditional Indian elegance with modern designs to bring you outfits you'll love and cherish.</p>
         <p>Our boutique specializes in thoughtfully designed outfits that combine elegance, comfort, and craftsmanship. Every design is carefully planned with attention to fabric, fit, color, and intricate detailing, ensuring that each creation reflects both quality and individuality.</p>
-        <a href="https://wa.me/918919264789" target="_blank" rel="noopener" class="text-link">Chat with our stylists on WhatsApp →</a>
+        <a href="https://wa.me/918919264789" target="_blank" rel="noopener noreferrer" class="text-link">Chat with our stylists on WhatsApp →</a>
       </div>
     </div>
   </section>
 
   <!-- ===== WHY US ===== -->
-  <section class="why-us" id="why-us">
+  <section class="why-us" id="why-us" aria-labelledby="whyus-title">
     <div class="section-inner about-grid reverse">
       <div class="about-image reveal">
-        <!-- IMAGE: about photo -->
-        <img src="css/images/whyus-v2.png" alt="Vedanshi Designs workspace" loading="lazy">
+        <img src="css/images/whyus-v2.png" alt="Vedanshi Designs workspace" loading="lazy" width="560" height="560">
         <span class="about-image-trim" aria-hidden="true"></span>
       </div>
       <div class="about-copy reveal">
         <p class="eyebrow">Why Choose Vedanshi Designs?</p>
-        <h2>Every stitch, made to fit your story</h2>
+        <h2 id="whyus-title">Every stitch, made to fit your story</h2>
         <p>At Vedanshi Designs Boutique, every outfit is crafted with care, precision, and attention to detail. From understanding your design ideas to the final stitching, we work closely with you to create an outfit that matches your style and fits you perfectly. We focus on quality fabrics, expert craftsmanship, and fine finishing to ensure every piece is elegant, comfortable, and made to last. Most importantly, we value your trust by providing personalized service, maintaining high standards of quality, and delivering your outfit on time for your special occasion.</p>
         <ul class="why-points">
           <li>Personalized fittings for every body and every budget</li>
@@ -106,10 +105,10 @@
   </section>
 
   <!-- ===== SERVICES ===== -->
-  <section class="collections" id="services">
+  <section class="collections" id="services" aria-labelledby="services-title">
     <div class="section-inner">
       <p class="eyebrow center">What We Do</p>
-      <h2 class="center">Our Services</h2>
+      <h2 class="center" id="services-title">Our Services</h2>
       <div class="collection-grid">
 
         <article class="collection-card reveal">
@@ -127,10 +126,9 @@
             <p>Transform your blouse with beautiful handcrafted Maggam Work designed for weddings, festivals, and special occasions. We create elegant embroidery using stones, beads, zari, mirrors, and intricate thread work to give every outfit a luxurious and unique look.</p>
           </div>
         </article>
-        
 
         <article class="collection-card reveal">
-          <div class="cc-image" style="background-image:url('css/images/dress-stiching.png')"></div>
+          <div class="cc-image" style="background-image:url('css/images/dress-stitching.png')"></div>
           <div class="cc-body">
             <h3>Dress Stitching</h3>
             <p>From everyday ethnic wear to festive and occasion outfits, we provide professional dress stitching with precision and care. Whether it's a kurti, salwar suit, Anarkali, gown, or lehenga, every dress is tailored to fit you perfectly.</p>
@@ -152,8 +150,8 @@
             <p>A perfect outfit starts with a perfect fitting. Our alteration services ensure your blouse, dress, or ethnic wear fits comfortably and looks flawless with expert adjustments and fine finishing.</p>
           </div>
         </article>
-        
-      <article class="collection-card reveal">
+
+        <article class="collection-card reveal">
           <div class="cc-image" style="background-image:url('css/images/dress.png')"></div>
           <div class="cc-body">
             <h3>Dresses</h3>
@@ -166,32 +164,31 @@
   </section>
 
   <!-- ===== GALLERY ===== -->
-  <section class="gallery" id="gallery">
+  <section class="gallery" id="gallery" aria-labelledby="gallery-title">
     <div class="section-inner">
       <p class="eyebrow center">Our Portfolio</p>
-      <h2 class="center">Inspired Creations</h2>
+      <h2 class="center" id="gallery-title">Inspired Creations</h2>
       <p class="gallery-sub center">Discover handcrafted Maggam Work, designer blouses, and custom outfits made with passion and precision.</p>
-      <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-grid" id="galleryGrid" role="region" aria-label="Portfolio gallery">
         <!-- items injected by script.js -->
       </div>
     </div>
   </section>
 
   <!-- ===== REVIEWS ===== -->
-  <section class="reviews" id="reviews">
+  <section class="reviews" id="reviews" aria-labelledby="reviews-title">
     <div class="reviews-inner">
-      <span class="reviews-eyebrow">What Our Customers Say</span>
+      <h2 id="reviews-title" style="text-align:center;">What Our Customers Say</h2>
       
-
       <div class="review-stage">
-        <button class="review-nav prev" aria-label="Previous review">‹</button>
+        <button class="review-nav prev" aria-label="Previous customer review">‹</button>
 
         <div class="review-deck">
           <div class="review-card-shadow" aria-hidden="true"></div>
 
-          <article class="review-card active" data-i="0">
+          <article class="review-card active" data-i="0" role="region" aria-label="Customer review 1 of 4">
             <span class="review-quote-mark" aria-hidden="true">&ldquo;</span>
-            <div class="stars">★★★★★</div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p>I loved the Maggam Work on my bridal blouse. The detailing was beautiful, and the fitting was exactly how I wanted it. Thank you, Vedanshi Designs!</p>
             <div class="review-meta">
               <span class="review-name">Priya Sharma</span>
@@ -199,9 +196,9 @@
             </div>
           </article>
 
-          <article class="review-card" data-i="1">
+          <article class="review-card" data-i="1" role="region" aria-label="Customer review 2 of 4">
             <span class="review-quote-mark" aria-hidden="true">&ldquo;</span>
-            <div class="stars">★★★★★</div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p>The designer blouse was stitched perfectly and delivered on time. Everyone at the function complimented the design and fitting.</p>
             <div class="review-meta">
               <span class="review-name">Ananya Reddy</span>
@@ -209,9 +206,9 @@
             </div>
           </article>
 
-          <article class="review-card" data-i="2">
+          <article class="review-card" data-i="2" role="region" aria-label="Customer review 3 of 4">
             <span class="review-quote-mark" aria-hidden="true">&ldquo;</span>
-            <div class="stars">★★★★★</div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p>I shared my design idea, and the team brought it to life beautifully. The quality, finishing, and attention to detail were excellent.</p>
             <div class="review-meta">
               <span class="review-name">Komal Dabas</span>
@@ -219,9 +216,9 @@
             </div>
           </article>
 
-          <article class="review-card" data-i="3">
+          <article class="review-card" data-i="3" role="region" aria-label="Customer review 4 of 4">
             <span class="review-quote-mark" aria-hidden="true">&ldquo;</span>
-            <div class="stars">★★★★★</div>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p>My festival outfit was stitched perfectly and fit me so well. The entire experience was smooth, and I will definitely come back for future occasions.</p>
             <div class="review-meta">
               <span class="review-name">Tejasvini</span>
@@ -231,10 +228,10 @@
 
         </div>
 
-        <button class="review-nav next" aria-label="Next review">›</button>
+        <button class="review-nav next" aria-label="Next customer review">›</button>
       </div>
 
-      <div class="review-progress">
+      <div class="review-progress" aria-hidden="true">
         <div class="review-progress-track">
           <div class="review-progress-fill"></div>
         </div>
@@ -243,13 +240,13 @@
   </section>
 
   <!-- ===== OPENING HOURS + MAP ===== -->
-  <section class="visit" id="visit">
+  <section class="visit" id="visit" aria-labelledby="visit-title">
     <div class="section-inner visit-grid">
 
       <!-- Left Side -->
       <div class="hours-card reveal">
         <p class="eyebrow">Visit Us</p>
-        <h2>VEDANSHI DESIGNS</h2>
+        <h2 id="visit-title">VEDANSHI DESIGNS</h2>
 
         <ul class="hours-list">
           <li><span>Monday</span><strong>10:00 AM – 8:00 PM</strong></li>
@@ -265,13 +262,13 @@
           Beside ICICI bank,<br>
           Padmarao Nagar, Secunderabad-500025, Hyderabad
         </p>
-        <a href="https://wa.me/918919264789" target="_blank" rel="noopener" class="btn btn-gold btn-wide-mobile">Book an Appointment</a>
+        <a href="https://wa.me/918919264789" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-wide-mobile">Book an Appointment</a>
       </div>
 
       <!-- Right Side -->
       <div class="map-embed reveal">
         <iframe
-          title="Get Directions to Vedanshi Designs"
+          title="Get Directions to Vedanshi Designs - Padmarao Nagar, Secunderabad"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7725890573934!2d78.50841819482908!3d17.4226978702064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9989d214da3b%3A0xbd258173bb40caf8!2sICICI%20Bank%20Branch-%20Hyderabad-%20Padmaraonagar!5e0!3m2!1sen!2sin!4v1784386619752!5m2!1sen!2sin"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -282,37 +279,37 @@
   </section>
 
   <!-- ===== CONTACT / FEEDBACK FORM ===== -->
-  <section class="contact" id="contact">
+  <section class="contact" id="contact" aria-labelledby="contact-title">
     <div class="section-inner">
       <p class="eyebrow center">Get in Touch</p>
-      <h2 class="center">Send Us a Message</h2>
+      <h2 class="center" id="contact-title">Send Us a Message</h2>
       <p class="contact-sub center">Have a question or want a styling appointment? Fill the form and we'll get back to you.</p>
 
-      <form class="contact-form" id="contactForm" novalidate>
+      <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
         <div class="form-row">
           <div class="form-field">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Your name" autocomplete="name">
-            <span class="field-error" id="err-fullName"></span>
+            <label for="fullName">Full Name <span aria-label="required">*</span></label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your name" autocomplete="name" required>
+            <span class="field-error" id="err-fullName" role="alert"></span>
           </div>
           <div class="form-field">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" autocomplete="tel">
-            <span class="field-error" id="err-phone"></span>
+            <label for="phone">Phone Number <span aria-label="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" autocomplete="tel" required>
+            <span class="field-error" id="err-phone" role="alert"></span>
           </div>
         </div>
         <div class="form-row">
           <div class="form-field">
             <label for="email">Email Address</label>
             <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
-            <span class="field-error" id="err-email"></span>
+            <span class="field-error" id="err-email" role="alert"></span>
           </div>
         </div>
         <div class="form-row">
           <div class="form-field form-field-full">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us what you're looking for..."></textarea>
-            <span class="field-error" id="err-message"></span>
+            <label for="message">Message <span aria-label="required">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you're looking for..." required></textarea>
+            <span class="field-error" id="err-message" role="alert"></span>
           </div>
         </div>
         <button type="submit" class="btn btn-gold btn-wide">Send Message</button>
@@ -323,50 +320,54 @@
 </main>
 
 <!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-  <svg class="footer-scallop" preserveAspectRatio="none" viewBox="0 0 1200 40"><use href="#scallop" transform="scale(10,2.85)"/></svg>
+<footer class="site-footer" role="contentinfo">
+  <svg class="footer-scallop" preserveAspectRatio="none" viewBox="0 0 1200 40" aria-hidden="true"><use href="#scallop" transform="scale(10,2.85)"/></svg>
   <div class="section-inner footer-grid">
     <div class="footer-brand">
       <div class="footer-logo-box">
-        <img src="css/images/logov-2.jpeg" alt="Vedanshi Designs logo" class="footer-logo">
+        <img src="css/images/logov-2.jpeg" alt="Vedanshi Designs logo" class="footer-logo" width="50" height="50">
         <div class="footer-brand-text">
           <h3>VEDANSHI DESIGNS</h3>
           <span>-MANJULA</span>
         </div>
       </div>
       <p class="footer-tagline">Elegant, comfortable, beautifully crafted outfits for every occasion — designed and stitched by hand in Secunderabad.</p>
-      <a href="https://wa.me/918919264789" target="_blank" rel="noopener" class="btn btn-outline-light">WhatsApp Us</a>
+      <a href="https://wa.me/918919264789" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">WhatsApp Us</a>
     </div>
 
     <div class="footer-links">
       <h4>Quick Links</h4>
-      <a href="#hero">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#why-us">Why Us</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+      <nav aria-label="Footer navigation">
+        <a href="#hero">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
 
     <div class="footer-services">
       <h4>Our Specialities</h4>
-      <a href="#services">Designer Stitching</a>
-      <a href="#services">Maggam Work</a>
-      <a href="#services">Dress Stitching</a>
-      <a href="#services">Custom Designs</a>
-      <a href="#services">Alterations &amp; Fittings</a>
+      <nav aria-label="Services navigation">
+        <a href="#services">Designer Stitching</a>
+        <a href="#services">Maggam Work</a>
+        <a href="#services">Dress Stitching</a>
+        <a href="#services">Custom Designs</a>
+        <a href="#services">Alterations &amp; Fittings</a>
+      </nav>
     </div>
 
     <div class="footer-contact">
       <h4>Get In Touch</h4>
-      <p class="footer-address">
+      <address class="footer-address">
         Belvedere Gardens Phase 1,<br>
         Beside ICICI bank,<br>
         Padmarao Nagar, Secunderabad-500025,<br>
         Hyderabad
-      </p>
-      <a href="https://wa.me/918919264789" target="_blank" rel="noopener" class="footer-phone">+91 89192 64789</a>
+      </address>
+      <a href="tel:+918919264789" class="footer-phone">+91 89192 64789</a>
       <p class="footer-hours-note">Mon–Sat, 10:00 AM – 8:00 PM · Sunday by appointment</p>
     </div>
   </div>
@@ -376,24 +377,24 @@
 </footer>
 
 <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
-<a href="https://wa.me/918919264789" target="_blank" rel="noopener" class="wa-float" aria-label="Chat with us on WhatsApp">
+<a href="https://wa.me/918919264789" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat with us on WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3c1.4.8 3.1 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.3.9.9-3.2-.2-.3C4 14.9 3.6 13.5 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.2-8.4 8.2z"/></svg>
 </a>
 
 <!-- ===== LIGHTBOX ===== -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
-  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">&lsaquo;</button>
+<div class="lightbox" id="lightbox" role="region" aria-label="Image lightbox" aria-modal="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&lsaquo;</button>
   <img src="" alt="" id="lightboxImg">
-  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">&rsaquo;</button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&rsaquo;</button>
 </div>
 
 <!-- ===== FORM SUCCESS TOAST ===== -->
-<div class="toast" id="successToast">
+<div class="toast" id="successToast" role="status" aria-live="polite" aria-atomic="true">
   <strong>Message sent!</strong>
   <span>We'll get back to you shortly.</span>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
